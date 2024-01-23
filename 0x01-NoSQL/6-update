@@ -1,0 +1,6 @@
+// update collection school with new attribute
+var collection = db.getCollection('school')
+collection.updateMany(
+    { name: 'Holberton School' },
+    { $set: { address: '972 Mission Street' } }
+)
