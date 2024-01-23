@@ -1,0 +1,12 @@
+// find names starting with 'Holberton'
+
+var conn = new Mongo()
+use my_db
+var collection = db.getCollection('school')
+var cursor = collection.find({ 'name': /^Holberton/ })
+
+while (cursor.hasNext()) {
+    printjson(cursor.next())
+}
+
+conn.close()
