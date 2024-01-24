@@ -1,7 +1,7 @@
 // List all documents in the collection `school`
 use my_db
 var collection = db.getCollection('school');
-var cursor = collection.find()
+var cursor = collection.find({})
 while (cursor.hasNext()) {
     var document = cursor.next();
     printjson(document);
