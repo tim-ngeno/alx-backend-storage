@@ -1,3 +1,4 @@
 // delete documents with name `Holberton School`
+use my_db
 var collection = db.getCollection('school')
 var result = collection.deleteMany({ name: 'Holberton school' })
