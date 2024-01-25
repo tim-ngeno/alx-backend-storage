@@ -1,5 +1,5 @@
 // List all documents with the name Holberton school
-var collection = db.getCollection('School')
+var collection = db.getCollection('school')
 var cursor = collection.find({ name: 'Holberton school' })
 
 while (cursor.hasNext()) {
