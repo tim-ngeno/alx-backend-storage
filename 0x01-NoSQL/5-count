@@ -1,5 +1,4 @@
 // Count the number of documents in a collection
-use my_db
 var collection = db.getCollection('school')
 var documentCount = collection.countDocuments({})
 print(documentCount)
